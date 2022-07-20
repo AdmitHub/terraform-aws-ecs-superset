@@ -9,3 +9,7 @@ output "app_service_security_group_id" {
 output "worker_beat_service_security_group_id" {
   value = module.worker_beat.beat_ecs_service_security_group_id
 }
+
+output "target_group_suffix" {
+  value = module.app.target_group_suffix
+}
